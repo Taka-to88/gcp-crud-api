@@ -19,7 +19,7 @@ jobs:
       with:
         name: "function-1"
         runtime: "python310"
-        source_dir: gcp-crud-api/get-user
+        source_dir: Taka-to88/gcp-crud-api/get-user/
         region: asia-northeast1
         description: crud trigger
         entry_point: get_user
@@ -31,7 +31,7 @@ jobs:
       with:
         name: "function-2"
         runtime: "python310"
-        source_dir: gcp-crud-api/create-user
+        source_dir: Taka-to88/gcp-crud-api/create-user/
         region: asia-northeast1
         description: crud trigger
         entry_point: create_data
@@ -42,7 +42,7 @@ jobs:
       with:
         name: "function-3"
         runtime: "python310"
-        source_dir: gcp-crud-api/update-user
+        source_dir: Taka-to88/gcp-crud-api/update-user/
         region: asia-northeast1
         description: crud trigger
         entry_point: update_data
@@ -53,7 +53,7 @@ jobs:
       with:
         name: "function-4"
         runtime: "python310"
-        source_dir: gcp-crud-api/delete-user
+        source_dir: Taka-to88/gcp-crud-api/delete-user/
         region: asia-northeast1
         description: crud trigger
         entry_point: delete_data
