@@ -1,0 +1,51 @@
+swagger: '2.0'
+info:
+  title: crud-api
+  description: Crud Test API Gateway with a Google Cloud Functions backend
+  version: 1.0.0
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /users:
+    get:
+      summary: List all users
+      operationId: userlist
+      x-google-backend:
+        address: https://asia-northeast1-fresh-effort-343112.cloudfunctions.net/function-1
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+    post:
+      summary: create user
+      operationId: create_user
+      x-google-backend:
+        address: https://asia-northeast1-fresh-effort-343112.cloudfunctions.net/function-2
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+    put:
+      summary: update user
+      operationId: update_user
+      x-google-backend:
+        address: https://asia-northeast1-fresh-effort-343112.cloudfunctions.net/function-3
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
+    delete:
+      summary: delete user
+      operationId: delete_user
+      x-google-backend:
+        address: https://asia-northeast1-fresh-effort-343112.cloudfunctions.net/function-4
+      responses:
+        '200':
+          description: A successful response
+          schema:
+            type: string
