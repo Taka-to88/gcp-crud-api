@@ -6,7 +6,7 @@ from firebase_admin import firestore
 def get_user(request):
     db = firestore.Client()
 
-    docs = db.collection('COMPANY').document('会社1').get()
+    docs = db.collection('company').get()
     users_list = []
     for doc in docs:
         users_list.append(doc.to_dict())
